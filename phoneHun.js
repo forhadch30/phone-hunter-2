@@ -60,8 +60,7 @@ const phoneDetails = async (slugs) => {
     console.log(data.data);
 
 
-    const { brand, image,slug } = data.data;
-
+    const { brand, image, slug } = data.data;
     const div = document.getElementById('my-Modal')
     div.innerHTML = `
     <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
