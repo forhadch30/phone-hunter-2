@@ -12,6 +12,7 @@ const loadAllPhones = async (status, searchText) => {
 
 const displayAllPhones = (phones) => {
     const dynamic = document.getElementById('dynamicPhones')
+    dynamic.innerHTML = ''
     phones.forEach(phone => {
         const { brand, image, phone_name, slug } = phone
         const div = document.createElement('div')
